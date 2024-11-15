@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="shortcut icon" type="image/x-icon" href="https://images.app.goo.gl/kmwTZhFZHiRQqGSs9">
+	<link rel="stylesheet" href="css/fontawesome-all.css">
+</head>
+
+<body id="body">
+	<!-- profile picture coding start-->
+	<div id="profile_box">
+		<img src="images/drawing-1.png" alt="images/drawing-1.png">
+		<div id="profile_pic-box">
+			<i class="fas fa-user" id="profile_icon"></i>
+			<div id="profile_pic"></div>
+		</div>
+	</div>
+
+	<!-- profile picture coding end -->
+
+	<i class="fas fa-plus-circle" id="plus_icon_btn"></i>
+	<i id="back_icon_btn" class="fas fa-arrow-circle-left"></i>
+
+	<div id="main_all_contact_box">
+		<div id="contact_header">
+			<h1><i class="fas fa-user-circle"></i>Contact</h1>
+			<input type="search" placeholder="Search Your Contact Here..." id="search">
+		</div>
+		<div id="all_contact_box"></div>
+	</div>
+
+	<!-- add contact coding start -->
+
+	<div id="contact_bg" class="animate__animated animate__fadeIn">
+		<div id="add_contact_box" class="animate__animated animate__slideInDown">
+			<h1 id="c_head">Add new contact</h1>
+			<form>
+				<input type="text" id="c_name" placeholder="Enter Name">
+				<input type="number" id="c_num" placeholder="Enter Mobile No.">
+				<button id="add" type="submit">Add</button>
+				<button id="close" type="button">Close</button>
+
+			</form>
+		</div>
+	</div>
+
+	<!-- add contact coding end -->
+
+	<script src="js/contact.js"></script>
+</body>
+
+                                </html>
