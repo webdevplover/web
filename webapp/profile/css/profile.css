@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+html {
+	height: 100vh;
+}
+
+#container {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	background-color: white;
+}
+
+
+#page_cover {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(127, 0, 255);
+	background: linear-gradient(262deg, rgba(127, 0, 255, 14.889705882352944) 0%, rgba(225, 0, 225, 0.141688172717037) 100%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+
+}
+
+#profile_box {
+	width: 300px;
+	background-color: white;
+	box-shadow: 0 0 10px #ccc;
+	border-radius: 15px;
+	padding: 50px 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#profile_pic {
+	width: 150px;
+	height: 150px;
+	border: 5px solid white;
+	box-shadow: 0 0 10px #ccc;
+	border-radius: 50%;
+	position: relative;
+	overflow: hidden;
+}
+
+#profile_icon {
+	font-size: 120px;
+	color: #ccc;
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#user_icon {
+	font-size: 120px;
+	color: #ccc;
+	position: absolute;
+	top: 25px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#profile_upload {
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	cursor: pointer;
+}
+
+#profile_box p {
+	font-size: 23px;
+	color: grey;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+#next {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	font-size: 16px;
+	background: linear-gradient(to right, #E100Ff, #7F00Ff);
+	color: white;
+	outline: none;
+	cursor: pointer;
+	margin-top: 20px;
+	display: none;
+
+}
+
+#skip {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	font-size: 16px;
+	background: linear-gradient(to right, #E100Ff, #7F00Ff);
+	color: white;
+	outline: none;
+	cursor: pointer;
+	margin-top: 20px;
+
+}
+
+
+body {
+	background: rgb(127, 0, 255);
+	background: linear-gradient(262deg, rgba(127, 0, 255, 14.889705882352944) 0%, rgba(225, 0, 225, 0.141688172717037) 100%);
+
+
+}
+
+#profile_header {
+	width: 100%;
+	height: 150px;
+	background-image: url(../images/cover_pic.jpg);
+	background-size: cover;
+
+}
+
+#profile_picture {
+	width: 150px;
+	height: 150px;
+	border: 5px solid white;
+	border-radius: 50%;
+	box-shadow: 0 0 10px #ccc;
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	transform: translate(-50%);
+	background-color: white;
+	overflow: hidden;
+}
+
+
+#profile_username {
+	text-align: center;
+	margin-top: 90px;
+}
+
+
+#app {
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#app a {
+	text-decoration: normal;
+}
+
+
+
+#contact,
+#player,
+#logout {
+	width: 180px;
+	height: 150px;
+	background-color: white;
+	margin: 15px;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#contact:hover,
+#player:hover,
+#logout:hover {
+	width: 200px;
+	height: 170px;
+	box-shadow: 0 0 10px #ccc;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#contact i,
+#player i,
+#logout i {
+	font-size: 40px;
+	color: purple;
+}
+
+#contact p,
+#player p,
+#logout p {
+	font-size: 25px;
+	color: purple;
+	margin-top: 7px;
+}
+
+
+#profile_footer {
+	width: 100%;
+	height: 70px;
+	background: purple;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+}
+
+#profile_footer p {
+	color: white;
+	font-size: 20px;
+}
+
+/* responsive coding for mobile device */
+@media(max-width:576px) {
+
+
+	#app {
+		height: 100%;
+		flex-direction: column;
+	}
+
+	#profile_header {
+		height: 100px;
+	}
+
+	#profile_picture {
+		top: 20px;
+	}
+
+	#contact,
+	#player,
+	#logout {
+		height: 130px;
+		width: 150px;
+	}
+
+	#contact:hover,
+	#player:hover,
+	#logout:hover {
+		height: 150px;
+		width: 170px;
+
+	}
+
+	#profile_footer {
+		position: absolute;
+		bottom: 0;
+	}
+
+
+
+
+    }
